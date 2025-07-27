@@ -1,0 +1,26 @@
+meta {
+  name: Describe Image
+  type: http
+  seq: 3
+}
+
+post {
+  url: http://127.0.0.1:3000/generate-from-image
+  body: multipartForm
+  auth: inherit
+}
+
+body:json {
+  {
+    "prompt": "Create a motivated story"
+  }
+}
+
+body:form-urlencoded {
+  : 
+}
+
+body:multipart-form {
+  prompt: Describe this image
+  image: @file(/Users/husnilk/Downloads/Logo_Unand.svg.png)
+}

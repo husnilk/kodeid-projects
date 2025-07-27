@@ -1,0 +1,17 @@
+meta {
+  name: chatbot
+  type: http
+  seq: 5
+}
+
+post {
+  url: http://localhost:3000/api/chat
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "message": "Introdoce yourself, please"
+  }
+}

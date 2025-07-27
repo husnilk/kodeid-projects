@@ -1,0 +1,26 @@
+meta {
+  name: Describe Document
+  type: http
+  seq: 4
+}
+
+post {
+  url: http://127.0.0.1:3000/generate-from-document
+  body: multipartForm
+  auth: inherit
+}
+
+body:json {
+  {
+    "prompt": "Create a motivated story"
+  }
+}
+
+body:form-urlencoded {
+  : 
+}
+
+body:multipart-form {
+  prompt: Describe this image
+  document: @file(/Users/husnilk/Downloads/PWEB _ Progress Project Kelompok 6 (3) (3).pdf)
+}

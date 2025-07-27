@@ -1,0 +1,9 @@
+{
+  "version": "1",
+  "name": "kode.id",
+  "type": "collection",
+  "ignore": [
+    "node_modules",
+    ".git"
+  ]
+}
